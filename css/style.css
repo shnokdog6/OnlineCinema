@@ -6,6 +6,7 @@ body {
     background-color: #621402;
     font-family: 'Roboto', sans-serif;
     color: white;
+    overflow-x: hidden;
 
 }
 
@@ -283,4 +284,119 @@ option {
     font-weight: bold;
     color: #fff;
 
+}
+
+.m-menu {
+    display: none;
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .select-cinema {
+        width: 100%;
+    }
+
+    .select-place {
+        width: 370px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .session {
+        flex-wrap: wrap;
+    }
+
+    .session-time {
+        order: 2;
+    }
+
+    .menu-item {
+        margin-right: 20px;
+    }
+
+    .session-cinema,
+    .session-time {
+        margin-top: 20px;
+    }
+
+    .select-time,
+    .select-place {
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        padding: 20px;
+        margin-left: 20px;
+        flex-direction: column;
+        background: #621402;
+        z-index: 9;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20%);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .menu-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .m-menu {
+        display: block;
+        background-color: transparent;
+        bottom: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+        border: none;
+
+    }
+
+    .is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        z-index: 9;
+    }
+
+    .fill-description {
+        margin-right: 30px;
+    }
+
+    .film {
+        flex-direction: column;
+    }
+
+    .film-trailer {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .session-cinema,
+    .session-time {
+        margin-top: 20px;
+    }
+
+    .select-time,
+    .select-place {
+        margin-top: 5px;
+    }
 }
