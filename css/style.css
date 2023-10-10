@@ -4,7 +4,12 @@ body {
 }
 
 .header {
-    display: flex;
+    <<<<<<< Updated upstream=======background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../images/background.png") no-repeat center top / cover;
+    padding-bottom: 60px;
+}
+
+.navbar {
+    >>>>>>>Stashed changes display: flex;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -45,4 +50,231 @@ body {
     height: 33px;
     border-radius: 50%;
     margin-left: 11px;
+}
+
+.film {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.film-title-small {
+    opacity: 0.5;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.film-title {
+    font-size: 36px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.film-description {
+    max-width: 550px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.film-trailer {
+    margin: auto;
+}
+
+.film-details {
+    display: flex;
+    margin-top: 40px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+}
+
+.time-icon {
+    margin-right: 14px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-icon {
+    margin-right: 14px;
+}
+
+.rating-current {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 64px;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.session-date-block {
+    display: flex;
+}
+
+.session-date-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    border-radius: 5px;
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+    padding: 9px 28px;
+}
+
+.session-date-item:hover {
+    color: #621402;
+    background: #FE8E05;
+}
+
+.session-month {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.session-day {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 900;
+}
+
+.session-weekday {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.select-place {
+    color: white;
+    padding-left: 18px;
+    width: 470px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 20px;
+}
+
+.select-time {
+    width: 108px;
+    height: 60px;
+    color: white;
+    padding-left: 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 20px;
+}
+
+option {
+    color: black;
+}
+
+.select-cinema {
+    width: 470px;
+}
+
+.scheme {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: rgba(36, 36, 36, 0.18);
+}
+
+.scheme-svg {
+    max-width: 1170px;
+}
+
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+    fill: #fe8e05;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    min-width: 1024px;
+    width: 90%;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.legend svg {
+    margin-right: 15px;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 24px 52px;
+    display: block;
+    border-radius: 5px;
+    background: #FE8E05;
+    line-height: 21px;
+    font-weight: bold;
+    color: #fff;
+
 }
